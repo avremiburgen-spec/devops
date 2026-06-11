@@ -1,0 +1,15 @@
+name: Git Workflow Example
+
+# 1. מתי להריץ את האקשן?
+on:
+  push:
+    branches: [ "main" ]
+
+# 2. מה לעשות?
+jobs:
+  say-hello:
+    runs-on: ubuntu-latest # הסביבה עליה ירוץ הקוד
+
+    steps:
+    - name: Run Hello World
+      run: echo "Hello World"
